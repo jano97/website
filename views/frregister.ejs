@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<!-- Head section -->
+<%- include("partials/frhead") %>
+
+<body>
+    <!--Header section-->
+    <%- include("partials/frheader") %>
+    
+    <!--REGISTRATION MIDDLE SECTIOON-->
+    <div id="registerlargcontainer">
+        <div id="registercontainer">
+            <h1>Formulaire d'inscription:</h1>
+            <form id="registerform" action="/action_page.php">
+                <div id="registercenter">
+                    <div id="registerleft">
+                        <label for="firstname" class="registerlabel">Prénom:</label>
+                            <input type="text" name="firstname" placeholder="  Votre prénom" class="registerleft registerinput" required>
+
+                        <label for="lastname" class="registerlabel">Nom de famille:</label>
+                            <input type="text" name="lastname" placeholder="  Votre nom de famille" class="registerleft registerinput" required>
+
+                        <label for="phone" class="registerlabel">Numéro de téléphone</label>
+                            <input type="tel" name="phone" placeholder="  (000) 000-0000" class="registerleft registerinput" required>
+                    </div>
+                    <div id="vl"></div>
+                    <div id="registerright">
+                        <label for="email" class="registerlabel">E-mail:</label>
+                            <input type="email" name="email" placeholder="  Votre E-mail" class="registerright registerinput" required>
+
+                        <label for="password" class="registerlabel">Mot de passe:</label>
+                            <input type="password" name="password" id="password" placeholder="  Mot de passe" class="registerright registerinput" required>
+
+                        <label for="confirmpassword" class="registerlabel">Confirmez le mot de passe:</label>
+                            <input type="password" name="passwordconfirm" id="password_confirm" placeholder="  Confirmez le mot de passe" class="registerinput registerright" onInput="check(this)">
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Soumettre" id="registersubmit">
+            </form>
+        </div>
+    </div>
+    <!--Footer section-->
+    <%- include("partials/frfooter") %>
+</body>
+</html>

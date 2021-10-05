@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    <%- include("partials/head") %>
+
+<body>
+    <!-- Header section -->
+    <%- include("partials/header")%>
+
+    <!--Contact form-->
+    <div id="contactcontainer">
+        <h1>Contact us</h1>
+        <hr  />
+        <form action="/messages/index" method="POST" id="form">
+            <label for="firstname" class="contactlabel">First name: </label>
+                <input type="text"  class="contactinput" name="firstname" placeholder="Your first name">
+
+            <label for="lastname" class="contactlabel">Last name: </label>
+                <input type="text" class="contactinput" name="lastname" placeholder="Your last name">
+
+            <label for="email" class="contactlabel">Email: </label>
+                <input type="email" id="email" class="contactinput" name="email" placeholder="Your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><p id="demo"></p>
+
+            <label for="subject" class="contactlabel">Subject: </label>
+                <input type="text" class="contactinput" name="subject" placeholder="Subject">
+
+            <label for="message" class="contactlabel">Message: </label>
+                <input type="text" id="message" class="contactinput" name="message" placeholder="Your message">
+
+            <label for="button" class="contactlabel"></label>
+                <input type="submit" value="Send" name="button" id="button"></input>
+
+        </form>
+    </div>
+    
+    <!--FOOTER-->
+    <%- include("partials/footer") %>
+</body>
+</html>

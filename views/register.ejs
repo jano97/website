@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    <%- include("partials/head") %>
+
+<body>
+    <!-- Header section -->
+    <%- include("partials/header")%>
+    
+    <!--REGISTRATION MIDDLE SECTIOON-->
+    <div id="registerlargcontainer">
+        <div id="registercontainer">
+            <h1>Registration form:</h1>
+            <form id="registerform">
+                <div id="registercenter">
+                    <div id="registerleft">
+                        <label for="firstname" class="registerlabel">Firstname:</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="  Your first name" class="registerleft registerinput">
+
+                        <label for="lastname" class="registerlabel">Lastname:</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="  Your lastname" class="registerleft registerinput">
+
+                        <label for="phone" class="registerlabel">phone number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="  (000) 000-0000" class="registerleft registerinput">
+                    </div>
+                    <div id="vl"></div>
+                    <div id="registerright">
+                        <label for="email" class="registerlabel">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="  Your email" class="registerright registerinput">
+
+                        <label for="password" class="registerlabel">Password:</label>
+                            <input type="password" id="password" name="password" id="password" placeholder="  password" class="registerright registerinput">
+
+                        <label for="confirmpassword" class="registerlabel">Confirm password:</label>
+                            <input type="password" id="confirmpassword" name="passwordconfirm" id="password_confirm" placeholder="  Confirm password" class="registerinput registerright">
+                    </div>
+                </div>
+                <input type="button" name="submit" value="Submit" id="registersubmit">
+            </form>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <%- include("partials/footer") %>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<!-- Head section -->
+<%- include("partials/frhead") %>
+
+
+<body>
+    <!-- Header section -->
+    <%- include("partials/frheader") %>
+
+    <!--Contact form-->
+    <div id="contactcontainer">
+        <h1>NOUS CONTACTER</h1>
+        <hr  />
+        <form action="/action_page.php" id="form">
+            <label for="firstname" class="contactlabel">Prénom: </label>
+                <input type="text"  class="contactinput" class="frcontact" name="firstname" placeholder="Votre prénom">
+
+            <label for="lastname" class="contactlabel">Nom de famille: </label>
+                <input type="text" class="contactinput" class="frcontact" name="lastname" placeholder="Votre Nom">
+
+            <label for="email" class="contactlabel">E-mail: </label>
+                <input type="email" id="email" class="contactinput" class="frcontact" name="email" placeholder="Votre e-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><p id="demo"></p>
+
+            <label for="subject" class="contactlabel">Sujet: </label>
+                <input type="text" class="contactinput" class="frcontact" name="subject" placeholder="Sujet">
+
+            <label for="message" class="contactlabel">Message: </label>
+                <input type="text" id="message" class="contactinput" class="frcontact" name="message" placeholder="Votre message">
+
+            <label for="button" class="contactlabel"></label>
+                <input type="submit" value="Envoyer" name="button" id="button" onclick="myFunction()" onclick="sent()"></input>
+
+        </form>
+    </div>
+    
+    <!--Footer section-->
+    <%- include("partials/frfooter") %>
+</body>
+</html>

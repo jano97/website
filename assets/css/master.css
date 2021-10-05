@@ -1,0 +1,936 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+body {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Header */
+.dropbtn {
+    display: none;
+}
+
+.dropdown-content {
+    display: flex;
+    float: right;
+    margin-right: 70px;
+    transition: 1s;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.links {
+    margin-top: 54px;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #cd2653;
+}
+
+#logo {
+    width: 180px;
+    margin-left: 70px;
+    float: left;
+    margin-bottom: 10px;
+    display: block;
+    transition: 1s;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+/*Body*/
+/*index*/
+#middle h1 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#middle {
+    background-color: #2f292b;
+    color: #dfe0e2;
+    height: auto;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    clear: both;
+    margin-left: -9px;
+}
+
+#middletexts {
+    margin-top: 20px;
+    margin: 20px;
+}
+
+#middle p {
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/*WORKS*/
+#workspictures {
+    display: block;
+    width: 80%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#workspictures .workstexts {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 8.4rem;
+    margin-bottom: 20px;
+}
+
+.pictures1, .pictures2, .pictures3, .pictures4,
+.pictures5, .pictures6 {
+    width: auto;
+    display: inline-flex;
+    height: auto;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.one, .two, .three, .four,
+.five, .six {
+    width: 400px;
+    max-height: 400px;
+    object-fit: scale-down;
+}
+
+/*BRANDING*/
+#brandingbody {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5efe0;
+    padding: 20px;
+}
+
+#brandingfirstrow, #brandingsecondrow, #brandingthirdrow {
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.brandingfirst, .brandingsecond, .brandingthird {
+    width: 400px;
+    max-height: 400px;
+    object-fit: scale-down;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*FAQ*/
+#faq {
+    font-size: 6.4rem;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faqcontainer {
+    background: #f5efe0;
+    width: auto;
+}
+
+#faqtexts p:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+
+#faqtexts {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+}
+
+#faqtexts h1 {
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+#faqtexts p {
+    font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*CONTACT*/
+#contactcontainer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#form {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#contactcontainer hr {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactcontainer h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.contactlabel {
+    margin-top: 26px;
+    float: left;
+}
+
+.contactinput {
+    padding: 14px;
+    width: 330px;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#message {
+    padding-bottom: 150px;
+}
+
+.contactlabel:hover {
+    color: #cd2653;
+}
+
+.contactinput:focus {
+    background-color: #cd2653;
+    color: white;
+    width: 350px;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+#contactcontainer ::placeholder {
+    color: white;
+}
+
+#button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: auto;
+}
+
+#button:hover {
+    border-radius: 10px;
+    background-color: #cd2653;
+}
+
+#button:active {
+    background-color: white;
+    transition: 0.01s;
+    color: red;
+}
+
+/*REGISTRATION PAGE*/
+#registerlargcontainer {
+    text-align: center;
+    width: auto;
+    background: #f5efe0;
+    padding: 30px 0px;
+}
+
+#registerlargcontainer ::placeholder {
+    color: white;
+}
+
+#registercontainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    clear: both;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#registercontainer h1 {
+    float: left;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#registerform {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-end;
+}
+
+#registercenter {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#registerleft {
+    float: left;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#vl {
+    border-left: 2px solid grey;
+}
+
+#registerright {
+    float: right;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.registerleft {
+    float: left;
+    background-color: pink;
+    color: white;
+}
+
+.registerright {
+    float: right;
+    background-color: pink;
+    color: white;
+}
+
+#registercenter label {
+    padding-top: 12px;
+}
+
+#registersubmit {
+    clear: both;
+}
+
+#registersubmit {
+    padding: 10px;
+    width: 80px;
+    float: right;
+    margin-right: 20px;
+}
+.registerinput {
+    line-height: 2;
+}
+
+#firstname:focus, #lastname:focus, #phone:focus, #email:focus,
+#password:focus, #confirmpassword:focus {
+    background-color: #cd2653;
+    color: white;
+    width: 200px;
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.registerlabel:hover {
+    color: #cd2653;
+}
+
+#registersubmit {
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: red;
+    color: white;
+    border: none;
+}
+#registersubmit:hover {
+    border-radius: 10px;
+    background-color: #cd2653;
+}
+
+#registersubmit:active {
+    background-color: white;
+    transition: 0.01s;
+    color: red;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+/*Footer top part*/
+#topfooter {
+    width: 60%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.footerlogo {
+    width: 36px;
+    padding: 7px;
+    display: inline-flex;
+    position: relative;
+    margin-top: 112px;
+}
+
+#logos a {
+    text-decoration: none;
+}
+
+#logos {
+    align-items: center;
+    float: left;
+    text-align: left;
+}
+
+.footerlogo:hover {
+    width: 46px;
+    transition: 0.3s;
+}
+
+.footerlogo:active {
+    border: 1px solid black;
+}
+
+#line {
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*Footer bottom part*/
+#bottomfooter {
+    width: 60%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+#footerdiv {
+    width: 400px;
+    float: left;
+    display: block;
+    text-align: left;
+    margin: 20px;
+}
+
+#footerdiv p {
+    font-family: "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 20px;
+}
+
+#language {
+    margin-top: 70px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#language a img {
+    width: 36px;
+    padding: 8px;
+}
+
+#language img:hover {
+    width: 48px;
+    transition: 0.3s;
+}
+
+#language img:active {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 1040px) {
+    body {
+        width: 100%;
+        scroll-behavior: auto;
+    }
+
+    /*Hamburger menu & logo*/
+    header {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: #CC1919;
+        color: white;
+        padding: 12px 50px;
+        font-size: 18px;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo {
+        margin-top: 5%;
+        height: 280px;
+        margin: auto;
+        display: block;
+        width: 280px;
+        float: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-top: 1%;
+        margin-right: 10%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 8px 8px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .links {
+        margin-top: 6px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #a5a6a9;
+    }
+
+    /*INDEX Middle body part*/
+    #middle {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /*WORKS body part*/
+    .pictures1, .pictures2, .pictures3, .pictures4,
+    .pictures5, .pictures6 {
+        height: auto;
+        clear: both;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .one, .two, .three, .four,
+    .five, .six {
+        width: 400px;
+        max-height: 400px;
+        object-fit: scale-down;
+        margin: 20px;
+    }
+
+    #workspictures .workstexts {
+        font-size: 7rem;
+    }
+
+    /*BRANDING*/
+    #brandingbody {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f5efe0;
+        padding: 20px;
+    }
+
+    #brandingfirstrow, #brandingsecondrow, #brandingthirdrow {
+        display: inline-flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandingfirst, .brandingsecond, .brandingthird {
+        width: 300px;
+        max-height: 300px;
+        object-fit: scale-down;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*F.A.Q*/
+    #faq {
+        margin-top: 100px;
+    }
+
+    /*CONTACT*/
+    #contactcontainer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        clear: both;
+    }
+
+    #contactcontainer h1 {
+        font-size: 2rem;
+    }
+
+    .contactinput {
+        padding: 10px;
+        width: 200px;
+    }
+
+    .contactinput:focus {
+        width: 250px;
+    }
+
+    /*Footer*/
+    footer {
+        display: inline-block;
+    }
+
+    #logos {
+        width: 100%;
+        text-align: center;
+        float: left;
+        padding-right: 10px;
+        clear: both;
+    }
+
+    #logos a {
+        text-decoration: none;
+    }
+
+    .footerlogo {
+        margin-top: 35%;
+        float: none;
+        clear: both;
+        margin-bottom: 1%;
+        text-align: center;
+        margin: 7px;
+    }
+
+    #line {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-top: -24px;
+        margin-bottom: 21px;
+    }
+
+    /*Footer bottom*/
+    #footerdiv {
+        text-align: center;
+    }
+
+    #bottomfooter {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #language {
+        text-align: center;
+        margin-top: 16px;
+        float: right;
+        margin-bottom: 5%;
+    }
+    /*REGISTER*/
+    #registerlargcontainer {
+        position: relative;
+        margin-top: 12%;
+    }
+    #registercenter {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    #vl {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 844px) {
+
+    /*WORKS*/
+    #workspictures .workstexts {
+        font-size: 3rem;
+    }
+
+    .one, .two, .three, .four,
+    .five, .six {
+        width: 300px;
+        max-height: 400px;
+        object-fit: scale-down;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /*BRANDING*/
+    #brandingbody {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f5efe0;
+        padding: 20px;
+    }
+
+    #brandingfirstrow, #brandingsecondrow, #brandingthirdrow {
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandingfirst, .brandingsecond, .brandingthird {
+        width: 300px;
+        max-height: 300px;
+        object-fit: scale-down;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    header {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .dropbtn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .dropdown {
+        margin: 0;
+    }
+
+    body {
+        width: auto;
+    }
+
+    /*MIDDLE*/
+    #middle {
+        margin-top: 10px;
+    }
+
+    /*BRANDING*/
+    #brandingbody {
+        font-size: 1.5rem;
+    }
+
+    #brandingfirstrow, #brandingsecondrow, #brandingthirdrow {
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandingfirst, .brandingsecond, .brandingthird {
+        width: 250px;
+        max-height: 250px;
+    }
+
+    #footerdiv {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .dropbtn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .dropdown {
+        margin: 0;
+    }
+
+    /*INDEX*/
+    #middle {
+        width: auto;
+    }
+
+    #middle p {
+        padding-bottom: 20px;
+    }
+
+    #footerdiv {
+        width: 90%;
+    }
+
+    #logos {
+        width: 105%;
+    }
+
+    /*FOOTER LOGOS*/
+    #logos {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    /*WORKS*/
+    #workspictures .workstexts {
+        font-size: 1rem;
+    }
+
+    .one, .two, .three, .four,
+    .five, .six {
+        width: 150px;
+        max-height: 200px;
+        object-fit: scale-down;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*BRANDING*/
+    #brandingbody {
+        font-size: 0.8rem;
+        padding: none;
+        width: 100%;
+    }
+
+    #brandingfirstrow, #brandingsecondrow, #brandingthirdrow {
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandingfirst, .brandingsecond, .brandingthird {
+        width: 150px;
+        max-height: 150px;
+        object-fit: scale-down;
+    }
+
+    /*FAQ*/
+    #faqtexts h1 {
+        margin-top: 25px;
+    }
+
+    /*CONTACT*/
+    #contactcontainer h1 {
+        font-size: 1.7rem;
+    }
+
+    .contactinput {
+        padding: 7px;
+        width: 150px;
+    }
+
+    .contactinput:focus {
+        width: 160px;
+    }
+
+    /*REGISTER*/
+    #registerlargcontainer {
+        width: 100%;
+    }
+}
