@@ -280,124 +280,6 @@ body {
     color: red;
 }
 
-/*REGISTRATION PAGE*/
-#registerlargcontainer {
-    text-align: center;
-    width: auto;
-    background: #f5efe0;
-    padding: 30px 0px;
-}
-
-#registerlargcontainer ::placeholder {
-    color: white;
-}
-
-#registercontainer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    clear: both;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#registercontainer h1 {
-    float: left;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-#registerform {
-    display: inline-flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-end;
-}
-
-#registercenter {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-#registerleft {
-    float: left;
-    display: inline-flex;
-    flex-direction: column;
-    padding: 25px;
-}
-
-#vl {
-    border-left: 2px solid grey;
-}
-
-#registerright {
-    float: right;
-    display: inline-flex;
-    flex-direction: column;
-    padding: 25px;
-}
-
-.registerleft {
-    float: left;
-    background-color: pink;
-    color: white;
-}
-
-.registerright {
-    float: right;
-    background-color: pink;
-    color: white;
-}
-
-#registercenter label {
-    padding-top: 12px;
-}
-
-#registersubmit {
-    clear: both;
-}
-
-#registersubmit {
-    padding: 10px;
-    width: 80px;
-    float: right;
-    margin-right: 20px;
-}
-.registerinput {
-    line-height: 2;
-}
-
-#firstname:focus, #lastname:focus, #phone:focus, #email:focus,
-#password:focus, #confirmpassword:focus {
-    background-color: #cd2653;
-    color: white;
-    width: 200px;
-    transition-duration: 1s;
-    border-radius: 5px;
-}
-.registerlabel:hover {
-    color: #cd2653;
-}
-
-#registersubmit {
-    border-radius: 10px;
-    box-shadow: none;
-    background-color: red;
-    color: white;
-    border: none;
-}
-#registersubmit:hover {
-    border-radius: 10px;
-    background-color: #cd2653;
-}
-
-#registersubmit:active {
-    background-color: white;
-    transition: 0.01s;
-    color: red;
-}
-
 /*Footer*/
 footer {
     text-align: center;
@@ -512,6 +394,7 @@ hr {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        transition: 0.2s;
     }
 
     #logo {
@@ -525,7 +408,6 @@ hr {
 
     .dropdown {
         position: relative;
-        display: inline-block;
         float: right;
         margin-top: 1%;
         margin-right: 10%;
@@ -707,18 +589,6 @@ hr {
         margin-top: 16px;
         float: right;
         margin-bottom: 5%;
-    }
-    /*REGISTER*/
-    #registerlargcontainer {
-        position: relative;
-        margin-top: 12%;
-    }
-    #registercenter {
-        display: inline-flex;
-        flex-direction: column;
-    }
-    #vl {
-        display: none;
     }
 }
 
@@ -927,10 +797,5 @@ hr {
 
     .contactinput:focus {
         width: 160px;
-    }
-
-    /*REGISTER*/
-    #registerlargcontainer {
-        width: 100%;
     }
 }

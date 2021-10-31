@@ -10,16 +10,16 @@
     <div id="contactcontainer">
         <h1>Contact us</h1>
         <hr  />
-        <form action="/messages/index" method="POST" id="form">
-            <label for="firstname" class="contactlabel">First name: </label>
-                <input type="text"  class="contactinput" name="firstname" placeholder="Your first name">
+        <form action="/messages" method="POST" id="form">
+            <label for="firstName" class="contactlabel">First name: </label>
+                <input type="text"  class="contactinput" name="firstName" placeholder="Your first name">
 
-            <label for="lastname" class="contactlabel">Last name: </label>
-                <input type="text" class="contactinput" name="lastname" placeholder="Your last name">
+            <label for="lastName" class="contactlabel">Last name: </label>
+                <input type="text" class="contactinput" name="lastName" placeholder="Your last name">
 
             <label for="email" class="contactlabel">Email: </label>
-                <input type="email" id="email" class="contactinput" name="email" placeholder="Your email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><p id="demo"></p>
+                <input type="email" id="email" class="contactinput" name="email" placeholder="Your email">
+                <p id="demo"></p>
 
             <label for="subject" class="contactlabel">Subject: </label>
                 <input type="text" class="contactinput" name="subject" placeholder="Subject">
@@ -28,7 +28,7 @@
                 <input type="text" id="message" class="contactinput" name="message" placeholder="Your message">
 
             <label for="button" class="contactlabel"></label>
-                <input type="submit" value="Send" name="button" id="button"></input>
+                <button type="submit" id="button">Send</button>
 
         </form>
     </div>

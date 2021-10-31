@@ -6,11 +6,11 @@
     <title>ALL MESSAGES</title>
 </head>
 <body>
-    <h1>(<%= message %>) MESSAGES</h1>
+    <h1>All MESSAGES</h1>
     <ul>
-        <% for(let message of messages) { %>
-            <li><a href="/messages/index/<%= messages.name %>"><%= messages.message %> </a></li>
-        <% } %>  
+        <% for (let message of messages) { %>
+            <li><a href="/messages/<%=message._id%> "><%= message.firstName + " " + message.lastName %></a> </li>
+        <% } %> 
     </ul>
 </body>
 </html>

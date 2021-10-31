@@ -13,12 +13,12 @@
     <div id="contactcontainer">
         <h1>NOUS CONTACTER</h1>
         <hr  />
-        <form action="/action_page.php" id="form">
-            <label for="firstname" class="contactlabel">Prénom: </label>
-                <input type="text"  class="contactinput" class="frcontact" name="firstname" placeholder="Votre prénom">
+        <form action="/messages" method="POST" id="form">
+            <label for="firstName" class="contactlabel">Prénom: </label>
+                <input type="text"  class="contactinput" class="frcontact" name="firstName" placeholder="Votre prénom">
 
-            <label for="lastname" class="contactlabel">Nom de famille: </label>
-                <input type="text" class="contactinput" class="frcontact" name="lastname" placeholder="Votre Nom">
+            <label for="lastName" class="contactlabel">Nom de famille: </label>
+                <input type="text" class="contactinput" class="frcontact" name="lastName" placeholder="Votre Nom">
 
             <label for="email" class="contactlabel">E-mail: </label>
                 <input type="email" id="email" class="contactinput" class="frcontact" name="email" placeholder="Votre e-mail"
@@ -31,7 +31,7 @@
                 <input type="text" id="message" class="contactinput" class="frcontact" name="message" placeholder="Votre message">
 
             <label for="button" class="contactlabel"></label>
-                <input type="submit" value="Envoyer" name="button" id="button" onclick="myFunction()" onclick="sent()"></input>
+                <button type="submit" name="button" id="button">Envoyer</button>
 
         </form>
     </div>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= message.id %> </title>
+</head>
+<body>
+    <h3>THE MESSAGE.</h3>
+    <ul>
+        <li>First name: <%= message.firstName %> </li>
+        <li>Last name: <%= message.lastName %> </li>
+        <li>Email: <%= message.email %> </li>
+        <li>Subject: <%= message.subject %> </li>
+        <li>Message: <%= message.message %> </li>
+    </ul>
+    <button type="button" onclick="javascript:history.back()">Back</button>
+</body>
+</html>
